@@ -20,13 +20,13 @@ if(isset($_POST['enviar_chamada'])){
 				$mail->isSMTP();
 				$mail->Host = 'smtp.gmail.com';
 				$mail->SMTPAuth = true;
-				$mail->Username = 'souzagabriel1405.henrique@gmail.com';
-				$mail->Password = 'SONW.8634';
+				$mail->Username = 'email';
+				$mail->Password = 'senha';
 				$mail->Port = 587;
 			
 				$mail->isHTML(true);
 				$mail->CharSet = 'UTF-8';
-				$mail->setFrom('souzagabriel1405.henrique@gmail.com','Gabs');
+				$mail->setFrom('email','Gabs');
 				$mail->addAddress($email, '');
 			
 				//$email->isHTML(true);
